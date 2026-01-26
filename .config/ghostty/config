@@ -1,0 +1,60 @@
+# DECORATION
+theme = Adwaita Dark
+window-theme = system
+font-family = Adwaita Mono
+font-size = 11
+cursor-style = underline
+# cursor-style = block / bar / underline (escoger uno)
+cursor-color = #E62D42
+# cursor-color = #E62D42 (rojo)
+window-height = 25
+window-width = 100
+window-padding-x = 5
+window-padding-y = 5
+adjust-cell-height = 10%
+background-opacity = 0.8
+mouse-scroll-multiplier = 0
+gtk-titlebar = false
+gtk-custom-css = /home/xisna/.config/ghostty/css
+
+# WINDOW
+gtk-single-instance = false
+confirm-close-surface = false
+keybind = ctrl+escape=new_window
+keybind = alt+q=quit
+keybind = alt+<=clear_screen
+keybind = alt+r=toggle_fullscreen
+            
+# TAB
+keybind = alt+a=new_tab
+keybind = alt+s=close_tab
+keybind = alt+d=new_split:auto
+keybind = alt+page_up=goto_split:previous
+keybind = alt+page_down=goto_split:next
+
+# SCROLL
+keybind = alt+home=scroll_to_top
+keybind = alt+end=scroll_to_bottom
+keybind = alt+up=scroll_page_up
+keybind = alt+down=scroll_page_down
+            
+# COPY/PASTE
+# copy-on-select = clipboard
+# es un bug a corregir
+keybind = alt+c=copy_to_clipboard
+keybind = alt+v=paste_from_clipboard
+keybind = alt+v=paste_from_selection
+keybind = alt+b=select_all
+            
+# SELECTION
+#keybind = shift+up=adjust_selection:up
+#keybind = shift+down=adjust_selection:down
+#keybind = shift+right=adjust_selection:right
+#keybind = shift+left=adjust_selection:left
+            
+# CONFIGURATION
+keybind = f1=open_config
+keybind = f2=reload_config
+
+# COMMAND
+initial-command = GHOSTTY_FIRST_TAB=true zsh # (para primera pestaña terminal)
