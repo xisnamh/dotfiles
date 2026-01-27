@@ -1,0 +1,115 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "width": 35,
+    "height": 11,
+    "source": "~/.config/fastfetch/logos/anonymous.png",
+    "padding": {
+      "top": 5,
+      "right": 2,
+      "left": 2
+    }
+    },
+    "modules": [
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;160;160;160m  ─────────────────────────────────────────────"
+        },
+        {
+            "type": "board",
+            "key": "󰇅 PC",
+            "keyColor": "#34E3FF",
+            "format": "{name}"
+        },
+        {
+            "type": "cpu",
+            "key": "│ ├",
+            "keyColor": "#34E3FF",
+            "format": "{name}"
+        },
+        {
+            "type": "gpu",
+            "key": "│ ├󰍹",
+            "keyColor": "#34E3FF",
+            "format": "{vendor} {name}"
+        },
+        {
+            "type": "monitor",
+            "key": "│ ├󱩛",
+            "keyColor": "#34E3FF",
+            "format": "Dell {name} - {width}@{height} - {inch}'"
+        },
+        {
+            "type": "mouse",
+            "key": "│ ├󰍿",
+            "keyColor": "#34E3FF"
+        },
+        {
+            "type": "memory",
+            "key": "└ └󰍛",
+            "keyColor": "#34E3FF",
+            "format": "{used} / {total}"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;160;160;160m  ─────────────────────────────────────────────"
+        },
+        {
+            "type": "os",
+            "key": " OS",
+            "keyColor": "#E738A5",
+            "format": "{name}"
+        },
+        {
+            "type": "kernel",
+            "key": "│ ├",
+            "keyColor": "#E738A5"
+        },
+        {
+            "type": "packages",
+            "key": "│ ├󰏖",
+            "keyColor": "#E738A5",
+            "format": "{pacman} pacmans + {flatpak-all} flatpaks"
+        },
+        {
+            "type": "shell",
+            "key": "│ ├",
+            "keyColor": "#E738A5",
+            "format": "{exe-path}"
+        },
+        {
+            "type": "terminal",
+            "key": "│ ├",
+            "keyColor": "#E738A5",
+            "format": "{pretty-name}"
+        },
+        {
+            "type": "de",
+            "key": "└ └",
+            "keyColor": "#E738A5",
+            "format": "{process-name}"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;160;160;160m  ─────────────────────────────────────────────"
+        },
+        {
+            "type": "command",
+            "key": " UP",
+            "keyColor": "white",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+        },
+        {
+            "type": "uptime",
+            "key": "└ └󱑎",
+            "keyColor": "white",
+            "format": "{hours} hours + {minutes} minutes"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;160;160;160m  ─────────────────────────────────────────────"
+        },
+        ]
+}
