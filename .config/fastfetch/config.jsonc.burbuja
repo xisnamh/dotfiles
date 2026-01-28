@@ -99,7 +99,7 @@
         },
         {
             "type": "publicip",
-            "key": "└ └󰩟",
+            "key": "└ └󱦂",
             "keyColor": "#E738A5",
             "format": "\u001b[38;2;160;160;160m-\u001b[0m {ip}"
         },
